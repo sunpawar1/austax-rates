@@ -1,79 +1,8 @@
 {
-  "version": 2,
-  "lastUpdated": "2025-05-01",
-  "currentFYEnd": 2025,
+  "version": 3,
+  "lastUpdated": "2026-07-08",
+  "currentFYEnd": 2026,
   "rates": {
-    "2024": {
-      "label": "2023–24",
-      "taxBrackets": [
-        { "min": 0,      "max": 18200,    "rate": 0,     "base": 0     },
-        { "min": 18201,  "max": 45000,    "rate": 0.19,  "base": 0     },
-        { "min": 45001,  "max": 120000,   "rate": 0.325, "base": 5092  },
-        { "min": 120001, "max": 180000,   "rate": 0.37,  "base": 29467 },
-        { "min": 180001, "max": 9999999,  "rate": 0.45,  "base": 51667 }
-      ],
-      "foreignBrackets": [
-        { "min": 0,      "max": 120000,   "rate": 0.325, "base": 0     },
-        { "min": 120001, "max": 180000,   "rate": 0.37,  "base": 39000 },
-        { "min": 180001, "max": 9999999,  "rate": 0.45,  "base": 61200 }
-      ],
-      "whmBrackets": [
-        { "min": 0,      "max": 45000,    "rate": 0.15,  "base": 0     },
-        { "min": 45001,  "max": 120000,   "rate": 0.325, "base": 6750  },
-        { "min": 120001, "max": 180000,   "rate": 0.37,  "base": 31125 },
-        { "min": 180001, "max": 9999999,  "rate": 0.45,  "base": 53325 }
-      ],
-      "litoThresholds": {
-        "max": 700,
-        "phase1End": 37500, "phase1Rate": 0.05,
-        "phase2End": 45000, "phase2Base": 325,
-        "phase3End": 66667, "phase3Rate": 0.015
-      },
-      "lmito": 0,
-      "saptoSingle": 2230,
-      "saptoCouple": 1602,
-      "saptoPhaseOutRate": 0.125,
-      "medicareThreshold": 26000,
-      "medicareShadeInEnd": 32500,
-      "mlsSingleThreshold": 93000,
-      "mlsTier1End": 108000,
-      "mlsTier2End": 144000,
-      "hecsThresholds": [
-        { "max": 51549,   "rate": 0     },
-        { "max": 59518,   "rate": 0.010 },
-        { "max": 63089,   "rate": 0.020 },
-        { "max": 66875,   "rate": 0.025 },
-        { "max": 70888,   "rate": 0.030 },
-        { "max": 75140,   "rate": 0.035 },
-        { "max": 79649,   "rate": 0.040 },
-        { "max": 84429,   "rate": 0.045 },
-        { "max": 89494,   "rate": 0.050 },
-        { "max": 94865,   "rate": 0.055 },
-        { "max": 100560,  "rate": 0.060 },
-        { "max": 106593,  "rate": 0.065 },
-        { "max": 112985,  "rate": 0.070 },
-        { "max": 119882,  "rate": 0.075 },
-        { "max": 127028,  "rate": 0.080 },
-        { "max": 134950,  "rate": 0.085 },
-        { "max": 143076,  "rate": 0.090 },
-        { "max": 151200,  "rate": 0.095 },
-        { "max": 9999999, "rate": 0.100 }
-      ],
-      "homeOfficeRate": 0.67,
-      "vehicleRate": 0.85,
-      "vehicleKmCap": 5000,
-      "concessionalCap": 27500,
-      "nonConcessionalCap": 110000,
-      "div293Threshold": 250000,
-      "superGuaranteeRate": 0.11,
-      "sbItoRate": 0.16,
-      "sbItoCap": 1000,
-      "selfEdReduction": 250,
-      "superCoContribMax": 57016,
-      "superCoContribPhaseOut": 42016,
-      "zoneAOffset": 338,
-      "zoneBOffset": 57
-    },
     "2025": {
       "label": "2024–25",
       "taxBrackets": [
@@ -130,6 +59,7 @@
         { "max": 159663,  "rate": 0.095 },
         { "max": 9999999, "rate": 0.100 }
       ],
+      "hecsSystem": "flat",
       "homeOfficeRate": 0.70,
       "vehicleRate": 0.88,
       "vehicleKmCap": 5000,
@@ -142,6 +72,65 @@
       "selfEdReduction": 250,
       "superCoContribMax": 58445,
       "superCoContribPhaseOut": 43445,
+      "zoneAOffset": 338,
+      "zoneBOffset": 57
+    },
+    "2026": {
+      "label": "2025–26",
+      "taxBrackets": [
+        { "min": 0,      "max": 18200,    "rate": 0,    "base": 0     },
+        { "min": 18201,  "max": 45000,    "rate": 0.16, "base": 0     },
+        { "min": 45001,  "max": 135000,   "rate": 0.30, "base": 4288  },
+        { "min": 135001, "max": 190000,   "rate": 0.37, "base": 31288 },
+        { "min": 190001, "max": 9999999,  "rate": 0.45, "base": 51638 }
+      ],
+      "foreignBrackets": [
+        { "min": 0,      "max": 135000,   "rate": 0.30, "base": 0     },
+        { "min": 135001, "max": 190000,   "rate": 0.37, "base": 40500 },
+        { "min": 190001, "max": 9999999,  "rate": 0.45, "base": 60850 }
+      ],
+      "whmBrackets": [
+        { "min": 0,      "max": 45000,    "rate": 0.15, "base": 0     },
+        { "min": 45001,  "max": 135000,   "rate": 0.30, "base": 6750  },
+        { "min": 135001, "max": 190000,   "rate": 0.37, "base": 33750 },
+        { "min": 190001, "max": 9999999,  "rate": 0.45, "base": 54100 }
+      ],
+      "litoThresholds": {
+        "max": 700,
+        "phase1End": 37500, "phase1Rate": 0.05,
+        "phase2End": 45000, "phase2Base": 325,
+        "phase3End": 66667, "phase3Rate": 0.015
+      },
+      "lmito": 0,
+      "saptoSingle": 2230,
+      "saptoCouple": 1602,
+      "saptoPhaseOutRate": 0.125,
+      "medicareThreshold": 28011,
+      "medicareShadeInEnd": 35014,
+      "mlsSingleThreshold": 101000,
+      "mlsTier1End": 118000,
+      "mlsTier2End": 158000,
+      "hecsThresholds": [],
+      "hecsSystem": "marginal",
+      "hecsMarginalTiers": [
+        { "min": 0,      "max": 67000,   "base": 0,    "rate": 0,    "flatOnTotal": false },
+        { "min": 67001,  "max": 125000,  "base": 0,    "rate": 0.15, "flatOnTotal": false },
+        { "min": 125001, "max": 179285,  "base": 8700, "rate": 0.17, "flatOnTotal": false },
+        { "min": 179286, "max": 9999999, "base": 0,    "rate": 0.10, "flatOnTotal": true  }
+      ],
+      "hecsMinThreshold": 67000,
+      "homeOfficeRate": 0.70,
+      "vehicleRate": 0.88,
+      "vehicleKmCap": 5000,
+      "concessionalCap": 30000,
+      "nonConcessionalCap": 120000,
+      "div293Threshold": 250000,
+      "superGuaranteeRate": 0.12,
+      "sbItoRate": 0.16,
+      "sbItoCap": 1000,
+      "selfEdReduction": 250,
+      "superCoContribMax": 60457,
+      "superCoContribPhaseOut": 45457,
       "zoneAOffset": 338,
       "zoneBOffset": 57
     }
